@@ -17,8 +17,8 @@ matrix addition of [[0,1,2],[9,8,7]] and [[6,5,4], [3,4,5]]  should be [ [ 6, 6,
 function matrixAddition(matrix1, matrix2) {
     let sumMatrix = [[],[]];
 
-    for (let i = 0; i < matrix1.length; i++) {
-        for (let j = 0; j < matrix1[i].length; j++) {
+    for (let i = 0; i < matrix1.length; i++) {  //go through outside array
+        for (let j = 0; j < matrix1[i].length; j++) { //go through each of the inner arrays in turn
             sumMatrix[i][j] = matrix1[i][j] + matrix2[i][j];
         }
     }

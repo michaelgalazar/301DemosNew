@@ -27,34 +27,34 @@ describe("isArrayEqual", function () {
 });
 
 
-// /* 2.	Write a function that checks if an array is palindrome by using push and pop array methods to reverse the 
-// array and then isArrayEqual method you wrote for 1.  */
-// describe("palindrome via push and pop", function () {
+/* 2.	Write a function that checks if an array is palindrome by using push and pop array methods to reverse the 
+array and then isArrayEqual method you wrote for 1.  */
+describe("palindrome via push and pop", function () {
 
-//     it("aba true", function () {
-//         assert.strictEqual(arrays.isPalindrome(["a", "b", "a"]), true);
-//     });
-//     it("abc false", function () {
-//         assert.strictEqual(arrays.isPalindrome(["a", "b", "c"]), false);
-//     });
-//     it("rotator true", function () {
-//         assert.strictEqual(arrays.isPalindrome(["r", "o", "t", "a", "t", "o", "r"]), true);
-//     });
-// });
+    it("aba true", function () {
+        assert.strictEqual(arrays.isPalindrome(["a", "b", "a"]), true);
+    });
+    it("abc false", function () {
+        assert.strictEqual(arrays.isPalindrome(["a", "b", "c"]), false);
+    });
+    it("rotator true", function () {
+        assert.strictEqual(arrays.isPalindrome(["r", "o", "t", "a", "t", "o", "r"]), true);
+    });
+});
 
-// /* 3.      Write a function, reverse2String,  that transforms a given array as following. Use appropriate array methods. 
-// Input (Array) 	Output (String) 
-// ['Quick', 'Brown', 'Fox'] 	"Fox_Brown_Quick" */
-// describe("reverse2String", function () {
+/* 3.      Write a function, reverse2String,  that transforms a given array as following. Use appropriate array methods. 
+Input (Array) 	Output (String) 
+['Quick', 'Brown', 'Fox'] 	"Fox_Brown_Quick" */
+describe("reverse2String", function () {
 
-//     it("Fox_Brown_Quick", function () {
-//         assert.strictEqual(arrays.reverse2String(["Quick", "Brown", "Fox"] ), "Fox_Brown_Quick");
-//     });
+    it("Fox_Brown_Quick", function () {
+        assert.strictEqual(arrays.reverse2String(["Quick", "Brown", "Fox"] ), "Fox_Brown_Quick");
+    });
 
-//     it("4_3_2_1", function () {
-//         assert.strictEqual(arrays.reverse2String([1, 2, 3, 4] ), "4_3_2_1");
-//     });
-// });
+    it("4_3_2_1", function () {
+        assert.strictEqual(arrays.reverse2String([1, 2, 3, 4] ), "4_3_2_1");
+    });
+});
 
 
 

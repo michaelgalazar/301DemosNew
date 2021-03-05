@@ -74,7 +74,7 @@ c.	Reduce to get sum of all the elements and returns this value--i.e, add the 5 
 */
 describe("filter map reduce string", function () {
     it("tests 32, 105,  -22 ", function () {
-        assert.strictEqual(arrays.fmrString("32, 105,  -22"), 11);
+        assert.strictEqual(arrays.fmrString([32, 105,  -22], 11));
     });
 });
 
