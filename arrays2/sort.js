@@ -8,7 +8,11 @@ let numbers = [1, 2, 11, 21, 3, 32];
 numbers.sort();
 console.log(numbers); // 1, 11, 2, 21, 3, 32
 
-numbers.sort(comparator);
+numbers.sort( (a, b) => {
+    if (a > b) return 1;
+    if (a < b) return -1;
+    if (a === b) return 0;
+});
 console.log(numbers);
 
 /**

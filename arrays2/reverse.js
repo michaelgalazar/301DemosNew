@@ -14,7 +14,7 @@ invert(myArray)
  * @param {*} separator optoinal 
  * @returns {string} a string 
  */
-function invert(arr, separator = " ..... "){
+function invert(arr, separator = " "){
     const reversed = arr.reverse();
     const joined = reversed.join(separator);
     return joined;
