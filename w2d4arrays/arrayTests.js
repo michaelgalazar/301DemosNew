@@ -67,14 +67,15 @@ describe("rotateNRight", function () {
 });
 
 
-/* 6.	Write a JavaScript function that takes a string of  numbers as comma separated values, e.g, “32, 105,  -22”,  and stores it into an array, e.g., [32, 105, -22] and do following operations
+/* 6.	Write a JavaScript function, filterMapReduce, that takes an arrat of numbers , e.g., [32, 105,  -22],  and do following operations
 a.	Filters out negative values
 b.	Maps the filtered elements to sum of its digits--i.e., 32 becomes 5 and 105 becomes 6
 c.	Reduce to get sum of all the elements and returns this value--i.e, add the 5 and 6 to get 11
+HINT:  You should write helper functions for each step: a, b, c
 */
-describe("filter map reduce string", function () {
+describe("filter map reduce array", function () {
     it("tests 32, 105,  -22 ", function () {
-        assert.strictEqual(arrays.fmrString([32, 105,  -22], 11));
+        assert.strictEqual(arrays.filterMapReduce([32, 105,  -22], 11));
     });
 });
 
