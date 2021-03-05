@@ -15,5 +15,5 @@ for (let i = 0; i < matrix.length; i++) {
         total = total + matrix[i][j];
     }
 }
-
+const empty = [];
 console.log("expect 45 : " , total);
