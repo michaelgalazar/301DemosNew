@@ -3,6 +3,10 @@
 
 exports.insertArray = insertArray;
 
+/*  THIS IS A SAMPLE FILE TO DEMO SETTING UP THE MOCHA AND CODE FILES FOR A DAILY ASSIGNMENT.
+LOOK IN THE mochaTests FOLDER FOR THE ACTUAL MOCHA TEST YOU SHOULD USE FOR THIS ASSIGNMENT
+*/
+
 /* 0.  Write a function that will take an index and two arrays 
 and splice the second array into the first at the given position */
 
