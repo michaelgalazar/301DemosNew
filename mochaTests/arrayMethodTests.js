@@ -80,6 +80,15 @@ describe("isArrayEqual", function () {
 //     });
 // });
 
+// hints for 5:
+// - which is appropriate for making a copy of an array, splice or slice?
+// - can you write a function that takes an index and an array and a newElement and replaces the element at the index with the newElement?
+//   e.g., frontReplace(2,[1, 2,3,4,5,6,7],99) --> [1,2,99,4,5,6,7)
+// - can you write a function that takes an index and an array and a newElement and replaces the element at the length - 1 - index with the newElement?
+//  e.g., backReplace(2,[1, 2,3,4,5,6,7],99) --> [1,2,3,4,99,6,7)
+// - can you write a function that takes an index and an array and returns a string with the elements at positions index and length - 1 - index
+//   e.g., getIndices(2,[1, 2,3,4,5,6,7]) --> "35"
+
 // /*   6. (EC) Write a function that merges two sorted arrays into one single sorted array. Make use of shift and push array methods. */
 // describe("merge via shift and push", function () {
 
