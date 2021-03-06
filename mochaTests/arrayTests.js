@@ -81,7 +81,19 @@ describe("filter map reduce string", function () {
 /* 7.	Write a function filterRange(arr, a, b) that gets an array arr, looks for elements with values higher or equal to a and lower or equal to b and return a result as an array. */
 describe("filterRange", function () {
     it("tests [0, 100, 3, 6, -555], 6, 60",  function () {
-        assert.deepStrictEqual([100, 6], arrays.filterRange([0, 100, 3, 6, -555], 6, 60));
+        assert.deepStrictEqual( arrays.filterRange([0, 100, 3, 6, -555], 6, 60), [100, 6]);
+    });
+});
+
+/* 8_1.  Write a function, isPalindrome, that checks if the elements in the array form a palindrome. */
+describe("isPalindrome", function () {
+    it('tests ["k", "a", "y", "a", "k"]' ,   function () {
+        const kayak = ["k", "a", "y", "a", "k"];
+        assert.strictEqual( arrays.isPalindrome(kayak), true);
+    });
+    it('tests ["k", "a", "y", "a"]',   function () {
+        const kaya = ["k", "a", "y", "a", "k"];
+        assert.strictEqual( arrays.isPalindrome(kaya), false);
     });
 });
 
