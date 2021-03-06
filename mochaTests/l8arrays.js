@@ -5,6 +5,8 @@ exports.getMiddle = getMiddle;
 exports.rotateLeft = rotateLeft;
 exports.rotateRight = rotateRight;
 exports.matrixAddition = matrixAddition;
+exports.filterPalindromes = filterPalindromes;
+
 
 
 /* 1.	Write a function addend(arr) that accepts an array of numbers as parameters and returns the sum of first and last elements of the array. */
@@ -13,7 +15,7 @@ exports.matrixAddition = matrixAddition;
  * @param {Array} arr is array of numbers
  * @returns {number} sum of first and last elements
  */
-function addends(arr){
+function addends(arr) {
     return arr[0] + arr[arr.length - 1];
 }
 
@@ -24,15 +26,15 @@ the array has an even number of elements, then this function must return the ave
  * @param {Array} arr is array of numbers
  * @returns {number}  middle element or average
  */
-function getMiddle(arr){
+function getMiddle(arr) {
     if (arr.length % 2 === 0) {
         //even number of elements
-        const middleLower = arr[arr.length/2 - 1];
-        const middleUpper = arr[arr.length/2];
-        const average = (middleLower + middleUpper)/2;
+        const middleLower = arr[arr.length / 2 - 1];
+        const middleUpper = arr[arr.length / 2];
+        const average = (middleLower + middleUpper) / 2;
         return average;
     } else {
-        return arr[(arr.length - 1)/2];
+        return arr[(arr.length - 1) / 2];
     }
 }
 
@@ -43,7 +45,7 @@ function getMiddle(arr){
  */
 function rotateLeft(arr) {
     let newArr = [];
-    for (let index = 1;  index < arr.length; index += 1){
+    for (let index = 1; index < arr.length; index += 1) {
         newArr[index - 1] = arr[index];
     }
     newArr[arr.length - 1] = arr[0];
@@ -57,7 +59,7 @@ function rotateLeft(arr) {
  */
 function rotateRight(arr) {
     let newArr = [];
-    for (let index = 1;  index < arr.length ; index += 1){
+    for (let index = 1; index < arr.length; index += 1) {
         newArr[index] = arr[index - 1];
     }
     newArr[0] = arr[arr.length - 1];
@@ -70,12 +72,12 @@ function rotateRight(arr) {
  * @param {Array} b is second array of numbers
  * @returns {Array} with the array addition of the two arrays
  */
-function matrixAddition(a,b){
+function matrixAddition(a, b) {
     let resultMatrix = [];
-    for(let i=0;i<a.length; i++){
-        let row =[];
-        for(let j=0; j<a[i].length; j++){
-            row.push(a[i][j]+b[i][j]);
+    for (let i = 0; i < a.length; i++) {
+        let row = [];
+        for (let j = 0; j < a[i].length; j++) {
+            row.push(a[i][j] + b[i][j]);
         }
         resultMatrix.push(row);
     }
@@ -84,7 +86,44 @@ function matrixAddition(a,b){
 
 
 /*
-    const result = source.splice(index, 0, ...insert);
-    console.log (source);
-    return source;
-    */
+/* 8.	Write a function that takes an array of strings and returns array of palindrome strings only.  Since we have not covered strings yet 
+you may use the following to turn the strings into arrays:  
+const arr = "hello".split("");  arr will be ["h", "e", "l", "l", "o" ]  */
+
+/**
+ * 
+ * @param {Array} arr of strings
+ * @returns {Array} of the strings that are palindromes
+ * process:
+ *  loop through elements, check each to see if is palindrome, if so then push in new array
+ */
+function filterPalindromes(arr) {
+    const palArray = [];
+    for (const nextString of arr) {
+        const charArray = nextString.split("");
+        if (isPalindrome(charArray)) {
+            palArray.push(nextString);
+        }
+    }
+    return palArray;
+}
+
+/**
+ * 
+ * @param {Array} arr of characters
+ * @returns {boolean} true if palindrome
+ */
+function isPalindrome(arr){
+    const length = arr.length;
+    for (let i = 0; i < length / 2; i++) {
+        if (arr[i] !== arr[length - 1 - i]) {
+            return false;
+        }
+    }
+}
+
+
+// describe("filterPalindromes", function () {
+//     it("tests [not, a, kayak, eagle, racecar]",   function () {
+//         assert.strictDeepEqual([ "a", "kayak", "racecar"], arrays.filterPalindromes([
+//     */

@@ -81,14 +81,16 @@ describe("filter map reduce string", function () {
 /* 7.	Write a function filterRange(arr, a, b) that gets an array arr, looks for elements with values higher or equal to a and lower or equal to b and return a result as an array. */
 describe("filterRange", function () {
     it("tests [0, 100, 3, 6, -555], 6, 60",  function () {
-        assert.strictDeepEqual([100, 6], arrays.filterRange([0, 100, 3, 6, -555], 6, 60));
+        assert.deepStrictEqual([100, 6], arrays.filterRange([0, 100, 3, 6, -555], 6, 60));
     });
 });
 
-/* 8.	Write a function that takes an array of strings and returns array of palindrome strings only. */
+/* 8.	Write a function that takes an array of strings and returns array of palindrome strings only.  Since we have not covered strings yet 
+you may use the following to turn the strings into arrays:  
+const arr = "hello".split("");  arr will be ["h", "e", "l", "l", "o" ]  */
 describe("filterPalindromes", function () {
     it("tests [not, a, kayak, eagle, racecar]",   function () {
-        assert.strictDeepEqual([ "a", "kayak", "racecar"], arrays.filterPalindromes(["not", "a", "kayak", "eagle", "racecar"]));
+        assert.deepStrictEqual([ "a", "kayak", "racecar"], arrays.filterPalindromes(["not", "a", "kayak", "eagle", "racecar"]));
     });
 });
 
@@ -96,7 +98,7 @@ describe("filterPalindromes", function () {
 describe("Matrix", function () {
     describe("matrixAddition", function () {
         it("matrix addition of [[0,1,2],[9,8,7]] and [[6,5,4], [3,4,5]]  should be [ [ 6, 6, 6 ], [ 12, 12, 12 ] ]", function () {
-            assert.strictDeepEqual(arrays.matrixAddition([[0, 1, 2], [9, 8, 7]], [[6, 5, 4], [3, 4, 5]]), [[6, 6, 6], [12, 12, 12]]);
+            assert.deepStrictEqual(arrays.matrixAddition([[0, 1, 2], [9, 8, 7]], [[6, 5, 4], [3, 4, 5]]), [[6, 6, 6], [12, 12, 12]]);
         });
     });
 });
