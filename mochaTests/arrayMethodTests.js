@@ -93,8 +93,4 @@ describe("isArrayEqual", function () {
 //         assert.deepStrictEqual(arrays.merge([1, 3, 8], [0, 5, 9]), [0, 1, 3, 5, 8, 9]);
 //     });
 
-//     it("138 merge with 059 mergeTwo ", function () {
-//         console.log(arrays.mergeTwo([1, 3, 8], [0, 5, 9]));
-//         assert.deepStrictEqual(arrays.mergeTwo([1, 3, 8], [0, 5, 9]), [0, 1, 3, 5, 8, 9]);
-//     });
 // });
