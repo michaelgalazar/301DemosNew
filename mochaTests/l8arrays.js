@@ -120,6 +120,7 @@ function isPalindrome(arr){
             return false;
         }
     }
+    return true;
 }
 
 
