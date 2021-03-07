@@ -96,3 +96,14 @@ describe("isArrayEqual", function () {
 //         assert.deepStrictEqual(arrays.merge([1, 3, 8], [0, 5, 9]), [0, 1, 3, 5, 8, 9]);
 //     });
 // });
+
+/*  hints for 6
+There are various solutions to the problem of merging two sorted arrays.  The following, shiftPush, might be helpful
+as a helper method in an approach that goes through the elements of the first array and merges each with the second array.
+function shiftPush(shiftArray, target, addArray) 
+shiftArray is a sorted array, take the elements in it that are less than target, and push them onto addArray 
+*/
+//     it("shiftPush helper", function () {
+//         console.log(arrays.shiftPush([1, 3, 8], 4, []));
+//         assert.deepStrictEqual(arrays.shiftPush([1, 3, 8], 4, []), [1, 3]);
+//     });
