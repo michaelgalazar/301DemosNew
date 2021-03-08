@@ -16,9 +16,9 @@ describe("find minimum", function () {
 /*
 3.	Write a function sumOddIndicesValues that takes an array as a parameter and returns the sum of values on the odd indices.  
 */
-describe("find minimum", function () {
+describe("find sum odd", function () {
     const arr = [1,3,4,6,4,7,2] ;
-    it("find 3", function () {
+    it("find 16", function () {
         assert.strictEqual(rev.sumOddIndicesValues(arr), 16);
     });
 }); 
@@ -31,6 +31,6 @@ describe("sumArrays", function () {
     const arr1 = [1,2,3,4,5] ;
     const arr2 = [5,4,3,2,1] ;
     it("sum to 6 6 6 ... ", function () {
-        assert.strictEqual(rev.sumArrays(arr1, arr2), [6,6,6,6,6] );
+        assert.deepStrictEqual(rev.sumArrays(arr1, arr2), [6,6,6,6,6] );
     });
 }); 
