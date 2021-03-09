@@ -113,8 +113,10 @@ function getAverageAge(users) {
  */
 function sumFirst(arr){
     let sum = 0;
-    for (const element of arr){
-     sum += element[0];
+    // for (const element of arr){
+    //     sum += element[0];
+    for (let i = 0; i < arr.length; i++) {  //[1 , 2]
+     sum += arr[i][0];
     }
     return sum;
   }

@@ -1,6 +1,6 @@
 "use strict";
 const assert = require("assert");
-const str = require("../students/stringsde.js");  
+const str = require("../homeworkSolutions/w3d1objects/strings.js");  
 //const str = require("./strings.js");  
 
 
