@@ -1,7 +1,7 @@
 "use strict";
 const assert = require("assert");
 //const arrays = require("./arrayMethods.js");
-const arrays = require("../students/arrayMethods21.js");
+const arrays = require("../students/arrayMethods59.js");
 
 
 /* 0.  Write a function that will take an index and two arrays and splice the second array into the first at the given position */
