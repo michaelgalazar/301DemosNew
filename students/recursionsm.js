@@ -24,8 +24,6 @@ console.log(power(2,3));
  * 
  * 
  */
-
-
 function countDigits(n) {
     if (n===0){
         return 0;
@@ -38,9 +36,8 @@ console.log(countDigits(1234));
 
  /**
  * 
- * @param {str} 
- * @param {number}
- * @return {str}
+ * @param {string} str is string
+ * @returns {string} abc
  * 
  * 
  */
