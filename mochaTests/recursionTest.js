@@ -1,6 +1,7 @@
 "use strict";
 const assert = require("assert");
-const rec = require("./recursion.js");
+//const rec = require("./recursion.js");
+const rec = require("../students/recursionsm.js");
 
 /*
 Write recursive functions to 

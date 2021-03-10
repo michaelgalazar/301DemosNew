@@ -56,10 +56,14 @@ and “walking” is “ing”. This function takes two parameters and returns t
 describe("suffix", function () {
     const jackson = "Jackson";
     const johnson = "Johnson";
+    const jason = "Jason";
     const wholesome = "wholesome";
 
     it("checks for true case", function () {
         assert.strictEqual(str.suffix(jackson, johnson), "son");
+    });
+    it("checks for unequal size strings", function () {
+        assert.strictEqual(str.suffix(jackson, jason), "son");
     });
     it("checks for false case", function () {
         assert.strictEqual(str.suffix(jackson, wholesome), "");
