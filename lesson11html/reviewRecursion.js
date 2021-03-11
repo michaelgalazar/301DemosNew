@@ -28,6 +28,15 @@ describe("power of negative exponent", function () {
  * @returns {number} floating point
  */
 function pow(number, power){
-//YOUR CODE HERE
+    if( power < 0) {
+        power = power * -1;
+        number = 1/number;
+    }
+    if(power == 0) {
+        return 1;
+    }
 
+    return number * pow(number, power - 1);
 }
+
+console.log(pow(5, -3));
